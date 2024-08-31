@@ -2,33 +2,29 @@
 
 This is a Node.js-based Vendor Management System built using the Next.js framework. The system allows for the management of vendor profiles, tracking of purchase orders, and calculation of vendor performance metrics.
 
+
 ## Features
 
-- **Vendor Profile Management:** Create, read, update, and delete vendor profiles.
-- **Purchase Order Tracking:** Create, read, update, and delete purchase orders.
-- **Performance Metrics:** Calculate and retrieve vendor performance metrics, including:
-  - On-time delivery rate
-  - Quality rating average
-  - Average response time
-  - Fulfillment rate
+- Vendor Profile Management: Create, read, update, and delete vendor profiles
+
+- Purchase Order Tracking: Create, read, update, and delete purchase orders
+
+- Performance Metrics: Calculate and retrieve vendor performance metrics, including on-time delivery rate, quality rating average, average response time, and fulfillment rate
+
 
 ## Technologies Used
 
-- TypeScript
-- Next.js
+- Typescript
 - Node.js
+- Next.js
 - MongoDB
 
 ## Installation
 
-### Local Installation
-
-1. **Clone the Repository:**
+1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yashkhandelwal123/Vendor-Management-System.git
-   cd Vendor-Management-System
-
+   git clone `https://github.com/yashkhandelwal123/Vendor-Management-System.git`
 
 ### Docker Installation
 
@@ -40,13 +36,13 @@ This is a Node.js-based Vendor Management System built using the Next.js framewo
 
 2. Pull the Docker Image :- On the target PC, you need to pull the Docker image from Docker Hub (or the registry where you pushed it). Use the following command:
 
- bash
-   sh docker pull khandelwalyash6185/vendor-management-system:latest
+   `sh docker pull khandelwalyash6185/vendor-management-system:latest`
+
 
 3. Run the Docker Container :- Once the image is pulled, you can run it with Docker. You'll need to specify the necessary ports and environment variables if required. Here’s an example command:
 
-```bash
-   sh docker run -d -p 3000:3000 --name vendor-management-system khandelwalyash6185/vendor-management
+   `sh docker run -d -p 3000:3000 --name vendor-management-system khandelwalyash6185/vendor-management`
+   
 
 
 # API Endpoints
@@ -96,8 +92,8 @@ This is a Node.js-based Vendor Management System built using the Next.js framewo
 
 - Clone the repository using git clone.
 
-- Install dependencies using npm install or yarn install.
+- Install dependencies using `npm install` or `yarn install`.
 
-- Start the application using npm run start or yarn start.
+- Start the application using `npm run dev'.
 
 - Use a tool Postman to test the API endpoints.
