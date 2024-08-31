@@ -70,7 +70,7 @@ This is a Node.js-based Vendor Management System built using the NestJS framewor
 
 # Setup Instructions
 
-- Clone the repository using git clone <repository-url>
+- Clone the repository using git clone [https://github.com/yashkhandelwal123/Vendor-Management-System.git]
 
 - Install dependencies using npm install or yarn install
 
