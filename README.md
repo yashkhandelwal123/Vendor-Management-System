@@ -1,6 +1,6 @@
 # Vendor Management System
 
-This is a Node.js-based Vendor Management System built using the NestJS framework. The system allows for the management of vendor profiles, tracking of purchase orders, and calculation of vendor performance metrics.
+This is a Node.js-based Vendor Management System built using the ExpressJs framework. The system allows for the management of vendor profiles, tracking of purchase orders, and calculation of vendor performance metrics.
 
 
 ## Features
@@ -14,8 +14,9 @@ This is a Node.js-based Vendor Management System built using the NestJS framewor
 
 ## Technologies Used
 
+- Javascript
 - Node.js
-- Next.Js
+- Express.Js
 - MongoDB
 
 ## Installation
@@ -23,7 +24,7 @@ This is a Node.js-based Vendor Management System built using the NestJS framewor
 1. Clone the repository:
 
    ```bash
-   git clone <repo link>
+   git clone https://github.com/yashkhandelwal123/Vendor-Management-System.git
 
 
 # API Endpoints
@@ -31,7 +32,7 @@ This is a Node.js-based Vendor Management System built using the NestJS framewor
 ## Vendor Profile
 
 - POST /vendors: Create a new vendor
-
+    
 
 - GET /vendors: List all vendors
 
@@ -70,10 +71,10 @@ This is a Node.js-based Vendor Management System built using the NestJS framewor
 
 # Setup Instructions
 
-- Clone the repository using git clone <repository-url>
+- Clone the repository using git clone.
 
-- Install dependencies using npm install or yarn install
+- Install dependencies using npm install or yarn install.
 
-- Start the application using npm run start or yarn start
+- Start the application using npm run start or yarn start.
 
-- Use a tool Postman to test the API endpoints
+- Use a tool Postman to test the API endpoints.
