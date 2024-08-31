@@ -1,4 +1,5 @@
 import dbConnect from '@/lib/dbConnect';
+import { v4 as uuidv4 } from 'uuid';
 import { VendorModel } from '@/models/Vendor';
 import { ObjectId } from 'mongodb';
 export async function POST(request: Request) {
@@ -6,8 +7,32 @@ export async function POST(request: Request) {
 
   try {
     const data = await request.json();
+    const { name, contactDetails, address } = data;
 
-    const newVendor = new VendorModel(data);
+    if (!name || !contactDetails || !address) {
+      return new Response(JSON.stringify({
+        success: false,
+        message: 'Missing required fields: name, contactDetails, or address',
+      }), { status: 400 });
+    }
+
+    
+    const vendorCode = uuidv4();
+    const onTimeDeliveryRate = 100; 
+    const qualityRatingAvg = 5;
+    const averageResponseTime = 0; 
+    const fulfillmentRate = 100;
+
+    const newVendor = new VendorModel({
+      name,
+      contactDetails,
+      address,
+      vendorCode,
+      onTimeDeliveryRate,
+      qualityRatingAvg,
+      averageResponseTime,
+      fulfillmentRate
+    });
     await newVendor.save();
 
     return new Response(JSON.stringify({
@@ -40,37 +65,4 @@ export async function GET(request: Request) {
     }), { status: 500 });
   }
 }
-// export async function GET(request: Request, { params }: { params: { vendorId: string } }) {
-//   await dbConnect();
 
-//   try {
-//     const vendorId = params.vendorId;
-
-//     if (!ObjectId.isValid(vendorId)) {
-//       return new Response(JSON.stringify({
-//         success: false,
-//         message: 'Invalid vendor ID',
-//       }), { status: 400 });
-//     }
-
-//     const vendor = await VendorModel.findById(vendorId);
-
-//     if (!vendor) {
-//       return new Response(JSON.stringify({
-//         success: false,
-//         message: 'Vendor not found',
-//       }), { status: 404 });
-//     }
-
-//     return new Response(JSON.stringify({
-//       success: true,
-//       vendor,
-//     }), { status: 200 });
-//   } catch (error) {
-//     console.error('Error retrieving vendor:', error);
-//     return new Response(JSON.stringify({
-//       success: false,
-//       message: 'Error retrieving vendor',
-//     }), { status: 500 });
-//   }
-// }
