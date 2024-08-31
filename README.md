@@ -2,29 +2,33 @@
 
 This is a Node.js-based Vendor Management System built using the Next.js framework. The system allows for the management of vendor profiles, tracking of purchase orders, and calculation of vendor performance metrics.
 
-
 ## Features
 
-- Vendor Profile Management: Create, read, update, and delete vendor profiles
-
-- Purchase Order Tracking: Create, read, update, and delete purchase orders
-
-- Performance Metrics: Calculate and retrieve vendor performance metrics, including on-time delivery rate, quality rating average, average response time, and fulfillment rate
-
+- **Vendor Profile Management:** Create, read, update, and delete vendor profiles.
+- **Purchase Order Tracking:** Create, read, update, and delete purchase orders.
+- **Performance Metrics:** Calculate and retrieve vendor performance metrics, including:
+  - On-time delivery rate
+  - Quality rating average
+  - Average response time
+  - Fulfillment rate
 
 ## Technologies Used
 
-- Typescript
+- TypeScript
 - Next.js
 - Node.js
 - MongoDB
 
 ## Installation
 
-1. Clone the repository:
+### Local Installation
+
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/yashkhandelwal123/Vendor-Management-System.git
+   cd Vendor-Management-System
+
 
 ### Docker Installation
 
